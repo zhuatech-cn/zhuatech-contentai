@@ -1,0 +1,63 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "unlicensedAssets": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "licensed": "9"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "restricted": "1"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "reviewApproved": "NO"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "rightsUntil": "2026-10-31"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "rightsUntil": "2026-11-01"
+    },
+    "expected": {
+      "decision": "PASS",
+      "daysOfRightsAfterPublish": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "publishDate": "2026-10-22"
+    },
+    "expected": {},
+    "error": true
+  }
+]
