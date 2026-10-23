@@ -1,0 +1,80 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "unlicensedAssets": "#0"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "unlicensedAssets": "#0"
+    }
+  },
+  {
+    "patch": {
+      "licensed": "9"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "unlicensedAssets": "#0"
+    }
+  },
+  {
+    "patch": {
+      "restricted": "1"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "unlicensedAssets": "#0"
+    }
+  },
+  {
+    "patch": {
+      "reviewApproved": "NO"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "unlicensedAssets": "#0"
+    }
+  },
+  {
+    "patch": {
+      "rightsUntil": "2026-10-31"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "unlicensedAssets": "#0"
+    }
+  },
+  {
+    "patch": {
+      "rightsUntil": "2026-11-01"
+    },
+    "expected": {
+      "decision": "PASS",
+      "daysOfRightsAfterPublish": "#0"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "unlicensedAssets": "#0"
+    }
+  }
+]
